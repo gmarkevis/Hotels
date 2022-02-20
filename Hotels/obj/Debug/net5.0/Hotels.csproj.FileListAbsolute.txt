@@ -301,3 +301,13 @@ C:\projects\Nova pasta\Hotels\Hotels\obj\Debug\net5.0\Hotels.Views.pdb
 C:\projects\Nova pasta\Hotels\Hotels\obj\Debug\net5.0\Hotels.csproj.CopyComplete
 C:\projects\Nova pasta\Hotels\Hotels\obj\Debug\net5.0\Hotels.genruntimeconfig.cache
 C:\projects\Nova pasta\Hotels\Hotels\obj\Debug\net5.0\Hotels.csproj.AssemblyReference.cache
+C:\projects\Nova pasta\Hotels\Hotels\obj\Debug\net5.0\Razor\Views\Hotel\Create.cshtml.g.cs
+C:\projects\Nova pasta\Hotels\Hotels\obj\Debug\net5.0\Razor\Views\Hotel\Delete.cshtml.g.cs
+C:\projects\Nova pasta\Hotels\Hotels\obj\Debug\net5.0\Razor\Views\Hotel\Details.cshtml.g.cs
+C:\projects\Nova pasta\Hotels\Hotels\obj\Debug\net5.0\Razor\Views\Hotel\Edit.cshtml.g.cs
+C:\projects\Nova pasta\Hotels\Hotels\obj\Debug\net5.0\Razor\Views\Hotel\Index.cshtml.g.cs
+C:\projects\Nova pasta\Hotels\Hotels\obj\Debug\net5.0\Razor\Views\Quarto\Create.cshtml.g.cs
+C:\projects\Nova pasta\Hotels\Hotels\obj\Debug\net5.0\Razor\Views\Quarto\Delete.cshtml.g.cs
+C:\projects\Nova pasta\Hotels\Hotels\obj\Debug\net5.0\Razor\Views\Quarto\Details.cshtml.g.cs
+C:\projects\Nova pasta\Hotels\Hotels\obj\Debug\net5.0\Razor\Views\Quarto\Edit.cshtml.g.cs
+C:\projects\Nova pasta\Hotels\Hotels\obj\Debug\net5.0\Razor\Views\Quarto\Index.cshtml.g.cs
