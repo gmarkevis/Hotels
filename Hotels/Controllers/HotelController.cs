@@ -56,11 +56,14 @@ namespace Hotels.Controllers
 
             if (ModelState.IsValid)
             {
-                Hotel hotel = new Hotel();
-                hotel.Nome = hotelVM.Nome;
-                hotel.CNPJ = hotelVM.CNPJ;
-                hotel.Endereco = hotelVM.Endereco;
-                hotel.Descricao = hotelVM.Descricao;
+                Hotel hotel = new Hotel()
+                {
+                    Nome = hotelVM.Nome,
+                    CNPJ = hotelVM.CNPJ,
+                    Endereco = hotelVM.Endereco,
+                    Descricao = hotelVM.Descricao
+                };
+
 
                 if (hotelVM.Foto != null)
                     hotel.Foto = ConverterFotoParaBytes(hotelVM.Foto);
@@ -121,11 +124,12 @@ namespace Hotels.Controllers
                         Endereco = hotelVM.Endereco,
                         Descricao = hotelVM.Descricao
                     };
+
                     if (hotelVM.Foto == null)
                         hotel.Foto = _context.Hotel.Where(h => h.Id == id).Select(h => h.Foto).FirstOrDefault();
                     else
                         hotel.Foto = ConverterFotoParaBytes(hotelVM.Foto);
-                    
+
 
                     _context.Update(hotel);
                     await _context.SaveChangesAsync();

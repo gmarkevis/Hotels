@@ -4,12 +4,19 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<style>
+    .table td, .table th {
+        text-align: center;
+        vertical-align: middle;
+    }
+</style>
+
+<h1>Quartos</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="btn btn-primary" asp-action="Create">Cadastrar Quarto</a>
 </p>
-<table class="table">
+<table class="table table-striped">
     <thead>
         <tr>
             <th>
@@ -28,10 +35,10 @@
                 @Html.DisplayNameFor(model => model.Preco)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Foto)
+                @Html.DisplayNameFor(model => model.Hotel)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Hotel)
+                @Html.DisplayNameFor(model => model.Foto)
             </th>
             <th></th>
         </tr>
@@ -55,15 +62,22 @@
                 @Html.DisplayFor(modelItem => item.Preco)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Foto)
+                @Html.DisplayFor(modelItem => item.Hotel.Nome)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Hotel.Id)
+                @if (item.Foto != null)
+                {
+
+                    var base64 = Convert.ToBase64String(item.Foto);
+                    var imgSrc = String.Format("data:image/gif;base64,{0}", base64);
+
+                    <img src='@imgSrc' style="max-width:100px; max-height:100px;" />
+                }
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Excluir</a>
             </td>
         </tr>
 }

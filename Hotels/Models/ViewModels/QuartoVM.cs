@@ -9,9 +9,9 @@ namespace Hotels.Models.ViewModels
     public class QuartoVM
     {
         public int Id { get; set; }
+        [Display(Name = "Hotel")]
         public int HotelId { get; set; }
         [Required(ErrorMessage = "Por favor, insira o Nome do Quarto")]
-        [Display(Name = "Hotel")]
         public string Nome { get; set; }
         [Required(ErrorMessage = "Por favor, insira o Número de Ocupantes do Quarto")]
         [Display(Name = "Número de Ocupantes")]
